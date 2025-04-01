@@ -2,6 +2,11 @@ import { useState } from 'react';
 import styles from '../styles/ExplanationSection.module.css';
 import Image from 'next/image';
 
+const simplifyText = (text) => {
+  // Simple function to make text more kid-friendly
+  return text; // For now, just return the original text
+};
+
 export default function ExplanationSection({ explanation, isKidFriendly = true }) {
   const [showTip, setShowTip] = useState(false);
   
@@ -35,9 +40,13 @@ export default function ExplanationSection({ explanation, isKidFriendly = true }
     
   const tip = funTips[explanation.content] || "Tip: Keep practicing and you'll be a coding superstar!";
   
-  console.log('Current content:', explanation.content);
-  console.log('Available images:', Object.keys(versionImages));
-  console.log('Matching image:', versionImages[explanation.content]);
+  const conclusion = explanation.conclusion || "";
+  
+  if (process.env.NODE_ENV !== 'production') {
+    console.log('Current content:', explanation.content);
+    console.log('Available images:', Object.keys(versionImages));
+    console.log('Matching image:', versionImages[explanation.content]);
+  }
   
   return (
     <div className={styles.explanation}>
@@ -93,19 +102,4 @@ export default function ExplanationSection({ explanation, isKidFriendly = true }
       />
     </div>
   );
-}
-
-// Helper function to simplify text for kids
-function simplifyText(text) {
-  // Replace complex terms with simpler ones
-  return text
-    .replace(/event handling/g, "responding to clicks")
-    .replace(/conditional logic/g, "deciding what happens next")
-    .replace(/dynamically/g, "automatically")
-    .replace(/interactive/g, "clickable")
-    .replace(/elements/g, "parts")
-    .replace(/function/g, "job")
-    .replace(/Array data structures/g, "lists of information")
-    .replace(/Game state management/g, "Keeping track of the game")
-    .replace(/multi-player turn management/g, "taking turns");
 } 
