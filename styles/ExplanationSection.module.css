@@ -1,0 +1,146 @@
+.explanation {
+  background-color: #fff9e6;
+  padding: 2rem;
+  border-radius: 15px;
+  margin-top: 2rem;
+  position: relative;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  border: 3px solid #ffd54f;
+}
+
+.kidTitle {
+  margin-top: 0;
+  color: #ff6f00;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.kidContent {
+  color: #333;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 500;
+}
+
+.pointsContainer {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.kidPoint {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 1.2rem;
+  position: relative;
+  background-color: #f8f8f8;
+  padding: 15px;
+  border-radius: 10px;
+  transition: transform 0.2s;
+}
+
+.kidPoint:hover {
+  transform: translateX(5px);
+  background-color: #f0f0f0;
+}
+
+.pointNumber {
+  background-color: #ff9800;
+  color: white;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 15px;
+  flex-shrink: 0;
+  font-size: 1.1rem;
+}
+
+.kidPoint p {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.conclusion {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #333;
+  background-color: #e8f5e9;
+  padding: 15px;
+  border-radius: 10px;
+  border-left: 5px solid #4caf50;
+  margin-bottom: 25px;
+}
+
+.tipButton {
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.2s;
+}
+
+.tipButton:hover {
+  background-color: #f57c00;
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.tipBox {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #fff3cd;
+  border: 2px dashed #ffb300;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  animation: fadeIn 0.5s;
+  text-align: center;
+  font-weight: 500;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.imageContainer {
+  margin: 20px 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  padding: 15px;
+}
+
+.explanationImage {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.imageContainer:hover .explanationImage {
+  transform: scale(1.02);
+}
+
+/* Add responsive adjustments */
+@media (max-width: 600px) {
+  .imageContainer {
+    margin: 15px 0;
+    padding: 10px;
+  }
+} 

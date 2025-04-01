@@ -1,0 +1,61 @@
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: linear-gradient(145deg, #e6f7ff, #f0f5ff);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+.header h1 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+  letter-spacing: -0.5px;
+}
+
+.header p {
+  color: #555;
+  font-size: 1.1rem;
+}
+
+.blue {
+  color: #3498db;
+}
+
+.orange {
+  color: #e7613c;
+}
+
+.yellow {
+  color: #f1c40f;
+}
+
+.green {
+  color: #64cf59;
+}
+
+.gray {
+  color: #72bbe3;
+}
+
+.emoji {
+  display: inline-block;
+  margin-left: 0.5rem;
+  animation: sparkle 2s infinite;
+}
+
+.bounce {
+  animation: bounce 1s;
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+  40% {transform: translateY(-15px);}
+  60% {transform: translateY(-7px);}
+}
+
+@keyframes sparkle {
+  0% {transform: scale(1); opacity: 1;}
+  50% {transform: scale(1.2); opacity: 0.7;}
+  100% {transform: scale(1); opacity: 1;}
+} 

@@ -1,0 +1,57 @@
+.tabsContainer {
+  margin-bottom: 1.5rem;
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  overflow-x: auto;
+  padding-bottom: 2px;
+}
+
+.tab {
+  padding: 0.75rem 1.25rem;
+  cursor: pointer;
+  background-color: #eee;
+  border: 1px solid #ddd;
+  border-bottom: none;
+  margin-right: 0.3rem;
+  border-radius: 10px 10px 0 0;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.emoji {
+  font-size: 1.2rem;
+}
+
+.tab:hover {
+  background-color: #ddd;
+  transform: translateY(-3px);
+}
+
+.tab.active {
+  background-color: #fff;
+  border-bottom: 1px solid #fff;
+  margin-bottom: -1px;
+  font-weight: bold;
+  transform: translateY(-5px);
+  box-shadow: 0 -3px 10px rgba(0,0,0,0.1);
+}
+
+.progressBar {
+  height: 6px;
+  background-color: #eee;
+  border-radius: 10px;
+  margin-top: 15px;
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+  background: linear-gradient(to right, #3498db, #2ecc71);
+  border-radius: 10px;
+  transition: width 0.5s ease;
+} 
