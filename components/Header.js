@@ -14,6 +14,7 @@ export default function Header() {
     
     return () => {
       clearInterval(bounceInterval);
+      clearInterval(taglineInterval);
     };
   }, []);
   
