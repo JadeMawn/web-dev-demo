@@ -1,9 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import Head from 'next/head';
 import Header from '../components/Header';
-import CodeExample from '../components/CodeExample';
 import ResultPreview from '../components/ResultPreview';
-import ExplanationSection from '../components/ExplanationSection';
 import { examples } from '../data/examples';
 import styles from '../styles/Home.module.css';
 import FlipCard from '../components/FlipCard';
@@ -75,10 +73,10 @@ export default function Home() {
           <div className={styles.instructorIntro}>
             
             <div className={styles.instructorInfo}>
-              <h2>Hi, I'm Jade!</h2>
+              <h2>Hi, I&apos;m Jade!</h2>
               <p>I am a college student in computer science and mathematics, also studying French and Spanish languages. I have 
                 been passionate about technology as early as I can remember and love finding ways to use it to solve real world problems.
-                I've been coding for a long time and love helping others discover new ways to use technology!</p>
+                I&apos;ve been coding for a long time and love helping others discover new ways to use technology!</p>
               <div className={styles.instructorBadges}>
                 <span className={styles.instructorBadge}>Computer Science</span>
                 <span className={styles.instructorBadge}>Mathematics</span>
@@ -105,8 +103,8 @@ export default function Home() {
           <div className={styles.instructorIntro}>
           <div className={styles.instructorInfo}>
             <h2>About This Lesson</h2>
-            <p>In this course we'll be learning about HTML, CSS, and JavaScript, the building blocks needed for building a website. 
-              In this lesson I will give you an introduction to these languages and explain how they are used! Finally we'll look 
+            <p>In this course we&apos;ll be learning about HTML, CSS, and JavaScript, the building blocks needed for building a website. 
+              In this lesson I will give you an introduction to these languages and explain how they are used! Finally we&apos;ll look 
               at what you can do with these tools and the types of projects we could build together to practice these skills. </p>
                 </div>
               </div>
@@ -215,7 +213,7 @@ export default function Home() {
       <section className={styles.projectsSection}>
         <h2 className={styles.projectsTitle}>Cool Projects We Can Build Together!</h2>
         <p className={styles.projectsIntro}>
-          Now that we've learned what these languages are used for, let's think of some fun projects to practice using these tools!
+          Now that we&apos;ve learned what these languages are used for, let&apos;s think of some fun projects to practice using these tools!
         </p>
         
         <div className={styles.projectCards}>
