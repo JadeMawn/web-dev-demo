@@ -1,5 +1,5 @@
 [build]
-  command = "npm run build"
+  command = "NODE_ENV=production npm run build"
   publish = ".next"
 
 [[plugins]]
@@ -7,4 +7,5 @@
 
 [build.environment]
   NEXT_PRIVATE_TARGET = "server"
-  NODE_OPTIONS = "--max_old_space_size=4096" 
+  NODE_OPTIONS = "--max_old_space_size=4096"
+  NODE_VERSION = "18.17.0" 
