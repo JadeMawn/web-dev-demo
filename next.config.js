@@ -2,8 +2,8 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['example.com'], // Add any external domains if needed
-    unoptimized: false // Use Next.js image optimization
+    domains: [], // Add any external domains if needed
+    unoptimized: true // Add this line for development
   },
 }
 
