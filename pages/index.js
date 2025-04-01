@@ -215,7 +215,7 @@ export default function Home() {
       <section className={styles.projectsSection}>
         <h2 className={styles.projectsTitle}>Cool Projects We Can Build Together!</h2>
         <p className={styles.projectsIntro}>
-          Now that we've learned what these languages are used for, let's build some fun projects to practice using these tools!
+          Now that we've learned what these languages are used for, let's think of some fun projects to practice using these tools!
         </p>
         
         <div className={styles.projectCards}>
@@ -229,7 +229,7 @@ export default function Home() {
                 <h3>Your Own Website</h3></span>
               </div>
             </div>
-            <p>Create a personal website all about YOU - your favorite things, your pets, your hobbies and more!</p>
+            <p>Create a personal website all about YOU showing your favorite things, your pets, hobbies, and more!</p>
             <div className={styles.projectBadges}>
             </div>
           </div>
@@ -244,7 +244,7 @@ export default function Home() {
                 <h3>Quiz Game</h3></span>
               </div>
             </div>
-            <p>Build a fun quiz game about any topic you love - animals, space, sports, or anything else!</p>
+            <p>Build a fun quiz game about you or any topic you like and quiz your friends!</p>
             <div className={styles.projectBadges}>
             </div>
           </div>
@@ -259,7 +259,7 @@ export default function Home() {
                 <h3>Digital Storybook</h3></span>
               </div>
             </div>
-            <p>Create your own interactive storybook where readers can choose what happens next!</p>
+            <p>Create your own interactive storybook about something that interests you where readers can choose what happens next!</p>
             <div className={styles.projectBadges}>
             </div>
           </div>
@@ -274,7 +274,7 @@ export default function Home() {
               </div>
             </div>
             
-            <p>Build a game where you can take care of a virtual pet - feed it, play with it, and watch it grow!</p>
+            <p>Build a game where you can take care of a virtual pet that you can feed, play with, and watch grow!</p>
             <div className={styles.projectBadges}>
             </div>
           </div>
