@@ -5,6 +5,7 @@
 [build.environment]
   NODE_VERSION = "18.17.0"
   NPM_FLAGS = "--legacy-peer-deps"
+  NETLIFY_NEXT_PLUGIN_SKIP = "true"
 
 # Remove the plugin section for now
 # [[plugins]]
