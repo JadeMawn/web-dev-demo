@@ -1,11 +1,11 @@
 [build]
-  command = "NODE_ENV=production npm run build"
-  publish = ".next"
-
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
+  command = "npm install && npm run build"
+  publish = "out"
 
 [build.environment]
-  NEXT_PRIVATE_TARGET = "server"
-  NODE_OPTIONS = "--max_old_space_size=4096"
-  NODE_VERSION = "18.17.0" 
+  NODE_VERSION = "18.17.0"
+  NPM_FLAGS = "--legacy-peer-deps"
+
+# Remove the plugin section for now
+# [[plugins]]
+#  package = "@netlify/plugin-nextjs" 

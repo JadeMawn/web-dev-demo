@@ -10,20 +10,23 @@
     "prebuild": "rm -rf .next"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "next": "^14.0.4"
+    "next": "14.0.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^2",
+    "@netlify/plugin-nextjs": "4.41.2",
+    "@tailwindcss/postcss": "^4.1.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-    "@tailwindcss/postcss": "^3",
-    "tailwindcss": "^3",
+    "@typescript-eslint/eslint-plugin": "^8.29.0",
+    "@typescript-eslint/parser": "^8.29.0",
     "eslint": "^8",
     "eslint-config-next": "^14.0.4",
-    "@eslint/eslintrc": "^2",
-    "@netlify/plugin-nextjs": "^4.41.2"
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5"
   }
 }
